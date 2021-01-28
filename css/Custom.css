@@ -28,3 +28,12 @@
     border-radius: 50%;
     max-width: 100px;
 }
+@media (max-width: 991px) {
+    .container.first  {
+        height: auto;
+    }
+    .text-right,
+    .text-left {
+        text-align: center !important;
+    }
+}
