@@ -3,6 +3,9 @@
     height: calc(56.25vw - 9rem);
     padding: 2rem 0;
 }
+.images-box {
+    margin: 0 20%;
+}
 .blocsapp-device-iphone6 {
     background-repeat: no-repeat;
     background-size: contain;
