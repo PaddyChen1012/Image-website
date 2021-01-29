@@ -31,6 +31,9 @@
     border-radius: 50%;
     max-width: 100px;
 }
+.shake {
+    animation: shake .6s linear infinite alternate;
+}
 @media (max-width: 991px) {
     .container.first  {
         height: auto;
@@ -38,5 +41,14 @@
     .text-right,
     .text-left {
         text-align: center !important;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotateZ(15deg);
+    }
+    100% {
+        transform: rotateZ(-15deg);
     }
 }
