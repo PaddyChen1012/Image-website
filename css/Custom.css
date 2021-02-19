@@ -77,8 +77,15 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: url(../images/GameMachine\ 1920x936\ BG2.jpg) no-repeat center/cover;
+    background: url(../images/GameMachine_BG2.jpg) no-repeat center/cover;
     overflow: hidden;
+}
+.warp_money {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/GameMachine_coin.png) no-repeat center/cover;
+    animation: opacity 1.6s infinite alternate ease;
 }
 .test {
     position: relative;
@@ -89,7 +96,6 @@
     position: relative;
     width: 100%;
     padding-bottom: 177.5%;
-    background: url(../images/GameMachine\ 800x1420.png) no-repeat center/contain;
     border-radius: 30px;
 }
 .pic_machine {
@@ -107,9 +113,9 @@
     perspective-origin: center center;
     -moz-perspective-origin: center center;
     -webkit-perspective-origin: center center;
-    perspective: 100px;
-    -moz-perspective: 100px;
-    -webkit-perspective: 100px;
+    perspective: 170px;
+    -moz-perspective: 170px;
+    -webkit-perspective: 170px;
     z-index: 1;
 }
 .carousel-control-play {
@@ -181,5 +187,14 @@
         position: relative;
         top: 0;
         width: 100%;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
