@@ -184,13 +184,12 @@
 }
 @media (max-width: 1024px) {
     .test {
-        top: 5%;
+        top: 0%;
         width: 70%;
     }
 }
 @media (max-width: 500px) {
     .test {
-        top: 5%;
         width: 100%;
     }
 }
