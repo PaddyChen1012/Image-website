@@ -84,8 +84,9 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: url(../images/GameMachine_coin.png) no-repeat center/cover;
+    background: url(../images/GameMachine_coin.png) no-repeat top/contain;
     animation: opacity 1.6s infinite alternate ease;
+    z-index: 2;
 }
 .test {
     position: relative;
