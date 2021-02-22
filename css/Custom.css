@@ -86,6 +86,7 @@
     height: 100vh;
     background: url(../images/GameMachine_coin.png) no-repeat top/contain;
     animation: opacity 1.6s infinite alternate ease;
+    pointer-events: none;
     z-index: 2;
 }
 .test {
