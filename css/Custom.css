@@ -118,6 +118,13 @@
     -webkit-perspective: 170px;
     z-index: 1;
 }
+[class^=carousel-control] {
+    background-color: #000;
+    animation: Flashing 3s infinite ease;
+}
+.carousel-control-next {
+    animation-delay: 1s;
+}
 .carousel-control-play {
     position: absolute;
     top: 0;
@@ -130,7 +137,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: rgba(0,0,0,.5) !important;
+    background-color: rgba(0,0,0,.5);
     border-radius: 50%;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -142,9 +149,10 @@
     -webkit-transition: opacity .15s ease;
     transition: opacity .15s ease;
     box-shadow: 0px 1px 3px #fff inset, 0px -3px #000 inset;
+    animation-delay: 2s;
 }
 .carousel-control-play:hover {
-    background-color: rgba(0,0,0,.6) !important;
+    background-color: rgba(0,0,0,.6);
     color: #fff;
     box-shadow: 0px -1px 3px #fff inset, 0px 3px #000 inset;
     text-decoration: none;
@@ -166,9 +174,6 @@
     -moz-transform: translateX(50px) translateY(50px) rotateY(60deg);
     -webkit-transform: rotateX(15deg);
     z-index: 1;
-}
-[class^=carousel-control] {
-    background-color: #000;
 }
 @media (max-width: 1280px) {
     .carousel-control-play {
@@ -196,5 +201,17 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes Flashing {
+    0% {
+        opacity: .5;
+    }
+    16% {
+        opacity: .8;
+    }
+    33%,100% {
+        opacity: .5;
     }
 }
